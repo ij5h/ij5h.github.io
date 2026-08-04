@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --card-hover: #334155;
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .profile {
+      margin-bottom: 32px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background-color: var(--card-bg);
+      border: 3px solid var(--accent);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+    }
+
+    .profile h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .profile p {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .link-card:hover {
+      background-color: var(--card-hover);
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .link-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .link-card span {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .arrow {
+      color: var(--text-sub);
+      font-size: 1.2rem;
+    }
+
+    /* 各サービスのアクセントカラー */
+    .youtube:hover { color: #ff0000; }
+    .xbox:hover { color: #107c10; }
+    .x:hover { color: #ffffff; }
+    .github:hover { color: #f0f6fc; }
+    .bsky:hover { color: #0085ff; }
+    .website:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">🎮</div>
+      <h1>ij5h</h1>
+      <p>SNSや関連リンクのまとめページです</p>
+    </div>
+
+    <div class="links">
+      <!-- YouTube -->
+      <a href="https://youtube.com/@ij5h" target="_blank" rel="noopener noreferrer" class="link-card youtube">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>YouTube</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+
+      <!-- Xbox -->
+      <a href="https://account.xbox.com/profile?gamertag=ij5h" target="_blank" rel="noopener noreferrer" class="link-card xbox">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M4.8 2.6C7.2 1 9.6.5 12 .5c2.4 0 4.8.5 7.2 2.1.3.2.4.6.2.9L16 11.2c-.3.4-.9.5-1.3.2-1.7-1.1-3.2-1.7-4.7-1.7s-3 .6-4.7 1.7c-.4.3-1 .2-1.3-.2L.6 3.5c-.2-.3-.1-.7.2-.9zM12 11c1.8 0 3.6.7 5.4 2 1.3 1 2.3 2.3 3 3.8.3.6.1 1.3-.5 1.7-2.3 1.5-4.9 2.5-7.9 2.5s-5.6-1-7.9-2.5c-.6-.4-.8-1.1-.5-1.7.7-1.5 1.7-2.8 3-3.8 1.8-1.3 3.6-2 5.4-2z"/></svg>
+        <span>Xbox</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://x.com/ij5h_" target="_blank" rel="noopener noreferrer" class="link-card x">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>X</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ij5h" target="_blank" rel="noopener noreferrer" class="link-card github">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>GitHub</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+
+      <!-- Bluesky -->
+      <a href="https://bsky.app/profile/ij5h.github.io" target="_blank" rel="noopener noreferrer" class="link-card bsky">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.377 5.66 2.08 8.04 1.704 2.38 4.258 3.082 5.962 3.082-1.704.852-3.408 1.704-5.112 3.408C1.226 20.002 0 21.706 0 22.8c0 1.094 1.348 1.2 1.8 1.2 5.112 0 9.18-7.2 10.2-10.2 1.02 3 5.088 10.2 10.2 10.2.452 0 1.8-.106 1.8-1.2 0-1.094-1.226-2.798-2.93-4.502-1.704-1.704-3.408-2.556-5.112-3.408 1.704 0 4.258-.702 5.962-3.082 1.703-2.38 2.08-7.35 2.08-8.04 0-.688-.139-1.86-.902-2.203-.659-.299-1.664-.621-4.3 1.24C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
+        <span>Bluesky</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+
+      <!-- Webサイト -->
+      <a href="https://secret-trade.f5.si" target="_blank" rel="noopener noreferrer" class="link-card website">
+        <svg class="link-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.18c1.3 0 2.528.258 3.65.719-.488 1.134-1.127 2.457-1.848 3.784A22.84 22.84 0 0 1 12 6.502a22.84 22.84 0 0 1-1.802.181c-.721-1.327-1.36-2.65-1.848-3.784A9.802 9.802 0 0 1 12 2.18zm-4.996 1.54c.48 1.07 1.088 2.313 1.756 3.564A26.06 26.06 0 0 0 4.29 8.283a9.82 9.82 0 0 1 2.714-4.563zm9.992 0a9.82 9.82 0 0 1 2.714 4.563 26.06 26.06 0 0 0-4.47-1.002c.668-1.251 1.276-2.494 1.756-3.564zM2.18 12c0-.986.136-1.942.39-2.85 1.75.257 3.626.638 5.485 1.144a25.32 25.32 0 0 0-.25 3.42c0 .584.024 1.164.07 1.734-1.928.532-3.864.933-5.688 1.196A9.82 9.82 0 0 1 2.18 12zm19.64 0c0 .986-.136 1.942-.39 2.85-1.824-.263-3.76-.664-5.688-1.196.046-.57.07-1.15.07-1.734 0-1.16-.086-2.308-.25-3.42 1.859-.506 3.735-.887 5.485-1.144.254.908.39 1.864.39 2.851zM12 21.82a9.802 9.802 0 0 1-3.65-.719c.488-1.134 1.127-2.457 1.848-3.784.58.058 1.183.088 1.802.088s1.222-.03 1.802-.088c.721 1.327 1.36 2.65 1.848 3.784a9.802 9.802 0 0 1-3.65.719zm4.996-1.54c-.48-1.07-1.088-2.313-1.756-3.564 1.58-.292 3.087-.63 4.47-1.002a9.82 9.82 0 0 1-2.714 4.566zM7.004 20.28a9.82 9.82 0 0 1-2.714-4.563c1.383.372 2.89.71 4.47 1.002-.668 1.251-1.276 2.494-1.756 3.561z"/></svg>
+        <span>Secret Trade</span>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
