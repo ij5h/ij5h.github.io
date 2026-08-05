@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <!-- FontAwesome (アイコン用ライブラリ) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    /* プロフィール領域 */
+    .profile {
+      margin-bottom: 32px;
+    }
+
+    .profile-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin: 0 auto 16px;
+      color: #ffffff;
+      box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .profile-bio {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    /* リンクボタン群 */
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 14px 20px;
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      background-color: #334155;
+      border-color: #475569;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .link-icon {
+      font-size: 1.5rem;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+    }
+
+    /* SVGアイコンのスタイル調整 */
+    .link-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .link-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .link-title {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .link-handle {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+/* ブランドカラーの微調整（最新ブランドガイドラインに基づくホバー色） */
+    .link-card.youtube:hover .link-icon { color: #ff0000; } /* YouTubeレッド */
+    .link-card.x-twitter:hover .link-icon { color: #f8fafc; } /* Xホワイト */
+    .link-card.tiktok:hover .link-icon { color: #ffffff; text-shadow: -1.5px -1.5px 0 #25f4ee, 1.5px 1.5px 0 #fe2c55; } /* TikTokネオン（シアン＆マゼンタ） */
+    .link-card.bluesky:hover .link-icon { color: #1185fe; } /* Blueskyブルー */
+    .link-card.discord:hover .link-icon { color: #5865f2; } /* Discordパープル */
+    .link-card.github:hover .link-icon { color: #f0f6fc; } /* GitHubホワイト */
+    .link-card.xbox:hover .link-icon { color: #107c10; } /* Xboxグリーン */
+    .link-card.roblox:hover .link-icon { color: #ffffff; } /* 現行Roblox（モダンホワイト） */
+    .link-card.website:hover .link-icon { color: #38bdf8; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- プロフィール部分 -->
+    <div class="profile">
+      <div class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h1 class="profile-name">@ij5h</h1>
+      <p class="profile-bio">Welcome to my link collection!</p>
+    </div>
+
+    <!-- リンクボタン一覧 -->
+    <div class="links-list">
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@ij5h" class="link-card youtube" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="link-content">
+          <span class="link-title">YouTube</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://x.com/ij5h" class="link-card x-twitter" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="link-content">
+          <span class="link-title">X</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@ij5h" class="link-card tiktok" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-tiktok"></i></div>
+        <div class="link-content">
+          <span class="link-title">TikTok</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- Bluesky -->
+      <a href="https://bsky.app/profile/ij5h.bsky.social" class="link-card bluesky" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon">
+          <svg viewBox="0 0 568 501" xmlns="http://www.w3.org/2000/svg">
+            <path d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.209C491.733-1.411 568-28.932 568 57.086c0 17.197-9.859 144.534-15.652 165.221-20.158 72.008-93.593 90.353-158.948 79.222 114.28 19.467 143.43 83.18 80.609 147.537-119.349 122.261-177.302-30.686-189.658-96.223-12.356 65.537-70.309 218.484-189.658 96.223-62.821-64.357-33.671-128.07 80.609-147.537C119.99 312.66 46.555 294.315 26.397 222.307 20.604 201.62 10.745 74.283 10.745 57.086c0-86.018 76.267-58.497 122.376-23.422z"></path>
+          </svg>
+        </div>
+        <div class="link-content">
+          <span class="link-title">Bluesky</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- Discord -->
+      <a href="https://discord.com" class="link-card discord" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-discord"></i></div>
+        <div class="link-content">
+          <span class="link-title">Discord</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ij5h" class="link-card github" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-github"></i></div>
+        <div class="link-content">
+          <span class="link-title">GitHub</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- Xbox -->
+      <a href="https://xbox.com" class="link-card xbox" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-brands fa-xbox"></i></div>
+        <div class="link-content">
+          <span class="link-title">Xbox</span>
+          <span class="link-handle">@ij5h</span>
+        </div>
+      </a>
+
+      <!-- Roblox (公式ロゴのSVGを直接埋め込み) -->
+      <a href="https://roblox.com" class="link-card roblox" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.926 23.843 0 18.892 5.075 0l18.925 4.95-5.074 18.893ZM9.37 13.08l3.337.873.873-3.337-3.337-.873-.873 3.337Z"></path>
+          </svg>
+        </div>
+        <div class="link-content">
+          <span class="link-title">Roblox</span>
+          <span class="link-handle">@i_j5h</span>
+        </div>
+      </a>
+
+      <!-- 自分のサイト -->
+      <a href="https://secret-trade.f5.si" class="link-card website" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="link-content">
+          <span class="link-title">Secret Trade</span>
+          <span class="link-handle">https://secret-trade.f5.si</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body></html>
